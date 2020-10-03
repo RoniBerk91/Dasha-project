@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:text=""
+        tools:textDirection="firstStrongLtr" />
+
+    <ListView
+        android:id="@+id/monthlyClientsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView14"
+        android:layout_above="@id/textView12"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="רווח חודשי ברוטו"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/monthPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/textView12"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextMonthBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="רווח חודשי נטו"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/monthPaymentNetoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextMonthBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/textView13"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/prevMonthBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="80dp"
+        android:background="#FF6161"
+        android:onClick="backBtnClick"
+        android:text="צפה בחודש קודם"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/nextMonthBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@id/prevMonthBtn"
+        android:background="#FF6161"
+        android:onClick="nextBtnClick"
+        android:text="צפה בחודש הבא"
+        android:textColor="#000000" />
+
+</RelativeLayout>
